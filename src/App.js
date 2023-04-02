@@ -36,13 +36,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>To-Do List</h1>
+      <h1>TO-DO</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Enter task"
+          placeholder="Enter Task"
         />
         <button type="submit">{editMode ? 'Update' : 'Add'}</button>
         {editMode && <button onClick={() => setEditMode(false)}>Cancel</button>}
